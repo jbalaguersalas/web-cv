@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi CV</title>
+    <title>Mi CV - Sara Lawrence</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -20,7 +20,9 @@
                 </div>
             </div>
         </header>
+
         <main>
+            <!-- About Section -->
             <section class="section">
                 <h2 class="section__title">About</h2>
                 <p class="section__description">
@@ -29,51 +31,250 @@
                     we think.
                 </p>
             </section>
+
+            <!-- Work Experience Section -->
             <section class="section">
                 <h2 class="section__title">Work Experience</h2>
+
                 <article class="work-experience">
                     <div class="work-experience__date"><time datetime="2017">2017</time> — Now</div>
-                    <div>
-                        <h3 class="work-experience__title">Senior Designer at Magic Design Co Senior Designer at Magic Design Co Senior
-                            Designer at Magic Design Co Senior Designer at Magic Design Co<span aria-hidden="true">↗</span></h3>
+                    <div class="work-experience__details">
+                        <h3 class="work-experience__title">
+                            <a href="#">Senior Designer at Magic Design Co <span aria-hidden="true">↗</span></a>
+                        </h3>
                         <p class="work-experience__location">San Francisco, CA</p>
                     </div>
                 </article>
+
                 <article class="work-experience">
                     <div class="work-experience__date"><time datetime="2015">2015</time> — <time datetime="2017">2017</time></div>
-                    <div>
-                        <h3 class="work-experience__title">Junior Designer at Creative Co<span aria-hidden="true">↗</span></h3>
+                    <div class="work-experience__details">
+                        <h3 class="work-experience__title">
+                            <a href="#">Junior Designer at Creative Co <span aria-hidden="true">↗</span></a>
+                        </h3>
                         <p class="work-experience__location">Atlanta, GA</p>
                         <div class="images-experience">
-                            <img src="./assets/images/design.png"
-                                alt="Abstract 3D composition of colorful geometric shapes" width="150" height="90">
-                            <img src="./assets/images/design-photo.png"
-                                alt="Mobile app screens shown as layered, overlapping cards" width="150" height="90">
-                            <img src="./assets/images/design-screen.png"
-                                alt="Collection of mobile app screens for a magazine website" width="150" height="90">
+                            <img src="./assets/images/design.png" alt="Abstract 3D composition" width="150" height="90">
+                            <img src="./assets/images/design-photo.png" alt="Mobile app preview" width="150" height="90">
+                            <img src="./assets/images/design-screen.png" alt="Collection of screens" width="150" height="90">
                         </div>
+                    </div>
+                </article>
 
-                         <div class="work-experience__date"><time datetime="2014">2014</time> — <time datetime="2015">2015</time></div>
-                    <div>
-                        <h3 class="work-experience__title">Intern at Design Hub<span aria-hidden="true">↗</span></h3>
+                <article class="work-experience">
+                    <div class="work-experience__date"><time datetime="2014">2014</time> — <time datetime="2015">2015</time></div>
+                    <div class="work-experience__details">
+                        <h3 class="work-experience__title">
+                            <a href="#">Intern at Design Hub <span aria-hidden="true">↗</span></a>
+                        </h3>
                         <p class="work-experience__location">Atlanta, GA</p>
                     </div>
-                      <div>
-                      </div>
-                        <div class="work-experience__date"><time datetime="2012">2012</time> — <time datetime="2014">2014</time></div>
+                </article>
 
-                        <h3 class="work-experience__title">Freelance Graphic Designer<span aria-hidden="true">↗</span></h3>
+                <article class="work-experience">
+                    <div class="work-experience__date"><time datetime="2012">2012</time> — <time datetime="2014">2014</time></div>
+                    <div class="work-experience__details">
+                        <h3 class="work-experience__title">
+                            <a href="#">Freelance Graphic Designer <span aria-hidden="true">↗</span></a>
+                        </h3>
                         <p class="work-experience__location">Remote</p>
-                    </div>  
-                     <div class="work-experience__date"><time datetime="2010">2010</time> — <time datetime="2012">2012  </time></div>
+                    </div>
+                </article>
 
-                        <h3 class="work-experience__title">Art Assistant at studio X<span aria-hidden="true">↗</span></h3>
+                <article class="work-experience">
+                    <div class="work-experience__date"><time datetime="2010">2010</time> — <time datetime="2012">2012</time></div>
+                    <div class="work-experience__details">
+                        <h3 class="work-experience__title">
+                            <a href="#">Art Assistant at Studio X <span aria-hidden="true">↗</span></a>
+                        </h3>
                         <p class="work-experience__location">Cincinnati, OH</p>
-                    </div>   
+                    </div>
+                </article>
+
+                <article class="work-experience">
                     <div class="work-experience__date"><time datetime="2008">2008</time> — <time datetime="2010">2010</time></div>
-
-                        <h3 class="work-experience__title">Volunter Designer at Nonprofit<span aria-hidden="true">↗</span></h3>
+                    <div class="work-experience__details">
+                        <h3 class="work-experience__title">
+                            <a href="#">Volunteer Designer at Nonprofit Y <span aria-hidden="true">↗</span></a>
+                        </h3>
                         <p class="work-experience__location">Cincinnati, OH</p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Writing Section -->
+            <section class="section">
+                <h2 class="section__title">Writing</h2>
+
+                <article class="writing-item">
+                    <div class="writing-item__date"><time datetime="2023">2023</time></div>
+                    <div class="writing-item__details">
+                        <h3 class="writing-item__title">
+                            <a href="#">Exploring the Intersection of Design and Technology <span aria-hidden="true">↗</span></a>
+                        </h3>
+                        <p class="writing-item__subtitle">Collaboration with Mia, Leo, and Ava</p>
+                        <div class="writing-card">
+                            <img src="./assets/images/design-photo.png" alt="Preview card image" class="writing-card__image">
+                            <div class="writing-card__info">
+                                <p class="writing-card__title">This is a site title that can go...</p>
+                                <span class="writing-card__read-time">1 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="writing-item">
+                    <div class="writing-item__date"><time datetime="2023">2023</time></div>
+                    <div class="writing-item__details">
+                        <h3 class="writing-item__title">
+                            <a href="#">Understanding Design Hierarchies <span aria-hidden="true">↗</span></a>
+                        </h3>
+                        <p class="writing-item__subtitle">Worked alongside Alex</p>
+                    </div>
+                </article>
+
+                <article class="writing-item">
+                    <div class="writing-item__date"><time datetime="2020">2020</time></div>
+                    <div class="writing-item__details">
+                        <h3 class="writing-item__title">
+                            <a href="#">The Art of User-Centered Design <span aria-hidden="true">↗</span></a>
+                        </h3>
+                    </div>
+                </article>
+
+                <article class="writing-item">
+                    <div class="writing-item__date"><time datetime="2019">2019</time></div>
+                    <div class="writing-item__details">
+                        <h3 class="writing-item__title">
+                            <a href="#">Navigating Design Challenges <span aria-hidden="true">↗</span></a>
+                        </h3>
+                    </div>
+                </article>
+
+                <article class="writing-item">
+                    <div class="writing-item__date"><time datetime="2018">2018</time></div>
+                    <div class="writing-item__details">
+                        <h3 class="writing-item__title">
+                            <a href="#">Crafting Engaging User Experiences <span aria-hidden="true">↗</span></a>
+                        </h3>
+                    </div>
+                </article>
+
+                <article class="writing-item">
+                    <div class="writing-item__date"><time datetime="2018">2018</time></div>
+                    <div class="writing-item__details">
+                        <h3 class="writing-item__title">
+                            <a href="#">Building a Cohesive Design Language <span aria-hidden="true">↗</span></a>
+                        </h3>
+                    </div>
+                </article>
+
+                <article class="writing-item">
+                    <div class="writing-item__date"><time datetime="2017">2017</time></div>
+                    <div class="writing-item__details">
+                        <h3 class="writing-item__title">
+                            <a href="#">The Power of Visual Storytelling <span aria-hidden="true">↗</span></a>
+                        </h3>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Side Projects Section -->
+            <section class="section">
+                <h2 class="section__title">Side Projects</h2>
+
+                <article class="side-project">
+                    <div class="side-project__date"><time datetime="2021">2021</time></div>
+                    <div class="side-project__details">
+                        <h3 class="side-project__title">
+                            <a href="#">Nature walks <span aria-hidden="true">↗</span></a>
+                        </h3>
+                    </div>
+                </article>
+
+                <article class="side-project">
+                    <div class="side-project__date"><time datetime="2020">2020</time></div>
+                    <div class="side-project__details">
+                        <h3 class="side-project__title">
+                            <a href="#">Plant-based cookware <span aria-hidden="true">↗</span></a>
+                        </h3>
+                    </div>
+                </article>
+
+                <article class="side-project">
+                    <div class="side-project__date"><time datetime="2019">2019</time></div>
+                    <div class="side-project__details">
+                        <h3 class="side-project__title">
+                            <a href="#">Interactive art installation <span aria-hidden="true">↗</span></a>
+                        </h3>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Education Section -->
+            <section class="section">
+                <h2 class="section__title">Education</h2>
+
+                <article class="education-item">
+                    <div class="education-item__date"><time datetime="2010">2010</time> — <time datetime="2010">2010</time></div>
+                    <div class="education-item__details">
+                        <h3 class="education-item__title">Master’s in Interaction Design at Georgia Tech</h3>
+                        <p class="education-item__location">Atlanta, GA</p>
+                    </div>
+                </article>
+
+                <article class="education-item">
+                    <div class="education-item__date"><time datetime="2006">2006</time> — <time datetime="2010">2010</time></div>
+                    <div class="education-item__details">
+                        <h3 class="education-item__title">Bachelor’s in Communication Design at University of Cincinnati</h3>
+                        <p class="education-item__location">Cincinnati, OH</p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="section">
+                <h2 class="section__title">Contact</h2>
+
+                <article class="contact-item">
+                    <div class="contact-item__label">Threads</div>
+                    <div class="contact-item__details">
+                        <a href="#" class="contact-item__link">username <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="contact-item">
+                    <div class="contact-item__label">Figma</div>
+                    <div class="contact-item__details">
+                        <a href="#" class="contact-item__link">username <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="contact-item">
+                    <div class="contact-item__label">Instagram</div>
+                    <div class="contact-item__details">
+                        <a href="#" class="contact-item__link">username <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="contact-item">
+                    <div class="contact-item__label">Bluesky</div>
+                    <div class="contact-item__details">
+                        <a href="#" class="contact-item__link">username <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="contact-item">
+                    <div class="contact-item__label">Mastodon</div>
+                    <div class="contact-item__details">
+                        <a href="#" class="contact-item__link">username <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="contact-item">
+                    <div class="contact-item__label">X</div>
+                    <div class="contact-item__details">
+                        <a href="#" class="contact-item__link">username <span aria-hidden="true">↗</span></a>
                     </div>
                 </article>
             </section>

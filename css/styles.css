@@ -211,3 +211,4 @@ body {
     flex-direction: row;
   }
 }
+a { text-decoration: none; color: inherit; }
