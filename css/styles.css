@@ -1,73 +1,51 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/Inter/static/Inter_18pt-Light.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/static/Inter_18pt-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/Inter/static/Inter_18pt-Regular.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/Inter/static/Inter_18pt-Medium.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/static/Inter_18pt-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/Inter/static/Inter_18pt-SemiBold.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/static/Inter_18pt-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/Inter/static/Inter_18pt-Bold.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/static/Inter_18pt-Bold.ttf") format("truetype");
   font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/Inter/static/Inter_18pt-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/Inter/static/Inter_18pt-Black.ttf') format('truetype');
-  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
   --font-main: "Inter", sans-serif;
-
-  /* Texto */
-  --color-text-heading: #111111;   /* nombre, títulos de sección y de puesto */
-  --color-text-body: #555555;      /* párrafos, subtítulo, ubicación */
-  --color-text-meta: #6d6d6d;      /* fechas: información secundaria */
-
-  /* Superficies */
-  --color-bg-page: #ffffff;        /* fondo de la página */
-  --color-bg-tag: #f6f6f6;         /* fondo de la píldora "website.com" */
-
-  /* Bordes */
-  --color-border: #e5e5e5;         /* marco de las imágenes */
+  --color-text-heading: #111;
+  --color-text-body: #555;
+  --color-text-meta: #6d6d6d;
+  --color-bg-page: #fff;
+  --color-bg-tag: #f6f6f6;
+  --color-border: #e5e5e5;
 }
 
 * {
@@ -85,11 +63,10 @@ img {
 body {
   font-family: var(--font-main);
   background-color: var(--color-bg-page);
+  color: var(--color-text-heading);
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   max-width: 43rem;
   margin: 4rem auto;
@@ -98,7 +75,6 @@ body {
 
 .profile {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -106,11 +82,9 @@ body {
   margin-left: 1rem;
 }
 
-.profile__data > * {
-  margin-bottom: 0.2rem;
-}
-
 .profile__image {
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -119,26 +93,24 @@ body {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.3;
-  color: var(--color-text-heading);
 }
 
 .profile__subtitle {
-  font-style: normal;
-  font-weight: 400;
+  margin-top: 0.2rem;
   font-size: 0.875rem;
   line-height: 1.8;
   color: var(--color-text-body);
-
 }
 
 .profile__website {
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1;
-  color: var(--color-text-body);
-  background: var(--color-bg-tag);
+  display: inline-block;
+  margin-top: 0.2rem;
+  padding: 5px 10px;
   border-radius: 12px;
-  padding: 5px 10px 5px 10px;
+  background: var(--color-bg-tag);
+  color: var(--color-text-body);
+  font-size: 0.75rem;
+  text-decoration: none;
 }
 
 .section {
@@ -146,49 +118,52 @@ body {
 }
 
 .section__title {
-  font-weight: 400;
+  margin-bottom: 1rem;
   font-size: 0.875rem;
-  line-height: 1.4;
-  color: var(--color-text-heading);
+  font-weight: 400;
 }
 
 .section__description {
-  font-weight: 400;
+  max-width: 520px;
   font-size: 0.875rem;
   line-height: 1.8;
   color: var(--color-text-body);
-
 }
 
-.work-experience {
+.item {
   display: flex;
-  flex-direction: row;
   margin-top: 1rem;
 }
 
-.work-experience__date {
-  font-weight: 400;
+.item__meta {
+  flex: 0 0 7rem;
   font-size: 0.875rem;
   line-height: 1.8;
   color: var(--color-text-meta);
-  flex: 0 0 7rem;
 }
 
-.work-experience .details {
+.item__details {
   flex: 1;
   min-width: 0;
 }
 
-.work-experience__title {
-  font-weight: 400;
+.item__title {
   font-size: 0.875rem;
+  font-weight: 400;
   line-height: 1.8;
-  color: var(--color-text-heading);
   overflow-wrap: break-word;
 }
 
-.work-experience__location {
-  font-weight: 400;
+.item__title a {
+  color: var(--color-text-heading);
+  text-decoration: none;
+}
+
+.item__title a:hover {
+  text-decoration: underline;
+}
+
+.item__subtitle {
   font-size: 0.875rem;
   line-height: 1.8;
   color: var(--color-text-body);
@@ -196,19 +171,77 @@ body {
 
 .images-experience {
   display: flex;
-  flex-direction: column;
   gap: 0.5rem;
   margin-top: 1.5rem;
 }
 
 .images-experience img {
+  width: 150px;
+  height: 90px;
+  object-fit: cover;
   border: 1px solid var(--color-border);
   border-radius: 8px;
 }
 
-@media (min-width: 768px) {
+.writing-card {
+  display: flex;
+  max-width: 320px;
+  margin-top: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.writing-card__image {
+  width: 90px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.writing-card__info {
+  padding: 0.75rem;
+}
+
+.writing-card__title {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.writing-card__read-time {
+  font-size: 0.7rem;
+  color: var(--color-text-meta);
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin: 2rem auto;
+    padding-inline: 1.25rem;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+  .item__meta {
+    flex: none;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+  .item__title {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+  .item__subtitle {
+    font-size: 0.75rem;
+    line-height: 1.6;
+  }
   .images-experience {
-    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .images-experience img {
+    width: 90px;
+    height: 60px;
+  }
+  .writing-card {
+    width: 100%;
   }
 }
-a { text-decoration: none; color: inherit; }
