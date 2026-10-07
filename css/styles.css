@@ -44,8 +44,8 @@
   --color-text-body: #555;
   --color-text-meta: #6d6d6d;
   --color-bg-page: #fff;
-  --color-bg-tag: #f6f6f6;
-  --color-border: #e5e5e5;
+  --color-bg-tag: #efe1e1;
+  --color-border: #ecd6d6;
 }
 * {
   margin: 0;
