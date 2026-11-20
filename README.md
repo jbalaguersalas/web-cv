@@ -1,5 +1,63 @@
 # Web CV
 
+Práctica del bootcamp de Full Stack de The Bridge.
+
+## Qué es
+
+Un currículum en formato web, maquetado a partir de la plantilla Read.cv de Figma. Hice un fork del repositorio del profesor, que traía la cabecera del perfil, la sección "About" y los dos primeros puestos de experiencia. Mi trabajo fue completar el resto de la plantilla con HTML y CSS. La persona del CV, Sara Lawrence, es la de la plantilla: los datos son de ejemplo.
+
+## Qué hice
+
+En `index.html` completé la plantilla entera:
+
+- **Work Experience**: seis puestos, cada uno con fechas, cargo y ciudad. El segundo lleva una fila de imágenes del portfolio.
+- **Writing**: siete artículos. El primero lleva una tarjeta con imagen, título y tiempo de lectura.
+- **Speaking**: tres charlas.
+- **Side Projects**: tres proyectos personales.
+- **Education**: el máster y el grado.
+- **Contact**: enlaces a seis redes (Threads, Figma, Instagram, Bluesky, Mastodon y X).
+
+Para no repetir estilos, monté un bloque `item` que sirve para todas las secciones: `item__meta` para la fecha a la izquierda, `item__details` para el contenido, `item__title` e `item__subtitle`. La tarjeta de los artículos es otro bloque, `writing-card`.
+
+En `css/styles.css` cambié los colores de las etiquetas y los bordes a un tono rosa claro (`--color-bg-tag: #efe1e1`) y ajusté los tamaños de letra para que quedaran como en el diseño. En pantallas de menos de 768px cada `item` pasa a columna y la fecha queda encima del texto.
+
+## Mis commits
+
+Los hice entre el 5 y el 7 de octubre en `main`, encima del trabajo del profesor:
+
+```
+9f82296 modificando el css
+010d369 modificando el css
+da4bd65 modificando el css
+a654cda modificando el css
+1474173 modificando el css
+8cb43d6 terminando html
+a7a0709 terminando html
+5e4766d terminando html
+bf56b6f orla cghtml<
+2008b89 estructurando html
+```
+
+Primero el HTML y después el CSS. El profesor siguió subiendo cambios a su repositorio después (un formulario de contacto y un botón para volver arriba), pero esos no están en mi copia.
+
+## Cómo verlo
+
+Abre `index.html` en el navegador. No hace falta instalar nada.
+
+## Qué aprendí
+
+**A reutilizar un bloque CSS.** Experiencia, artículos, charlas y proyectos tienen la misma forma: fecha a un lado y texto al otro. Con un solo bloque `item` los maqueto todos sin repetir reglas.
+
+**A trabajar sobre un fork.** El repositorio viene del profesor (`upstream`) y yo subo a mi copia (`origin`). Con `git log --all` veo los dos historiales y en qué commit se separan.
+
+**A leer un diseño de Figma.** Saqué de la plantilla los tamaños, los márgenes y los colores para que la página se pareciera lo más posible.
+
+## README original del proyecto
+
+Este es el README que traía el repositorio del profesor. Explica el diseño de partida y las convenciones del proyecto:
+
+# Web CV
+
 Currículum vitae en formato web: una página con perfil, sección "About" y experiencia laboral con portfolio de imágenes. Es responsive (mobile-first) y está hecha con HTML y CSS, sin frameworks ni dependencias.
 
 ## Diseño
