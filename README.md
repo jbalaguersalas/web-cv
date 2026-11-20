@@ -44,14 +44,6 @@ Primero el HTML y después el CSS. El profesor siguió subiendo cambios a su rep
 
 Abre `index.html` en el navegador. No hace falta instalar nada.
 
-## Qué aprendí
-
-**A reutilizar un bloque CSS.** Experiencia, artículos, charlas y proyectos tienen la misma forma: fecha a un lado y texto al otro. Con un solo bloque `item` los maqueto todos sin repetir reglas.
-
-**A trabajar sobre un fork.** El repositorio viene del profesor (`upstream`) y yo subo a mi copia (`origin`). Con `git log --all` veo los dos historiales y en qué commit se separan.
-
-**A leer un diseño de Figma.** Saqué de la plantilla los tamaños, los márgenes y los colores para que la página se pareciera lo más posible.
-
 ## README original del proyecto
 
 Este es el README que traía el repositorio del profesor. Explica el diseño de partida y las convenciones del proyecto:
